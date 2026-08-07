@@ -1,0 +1,122 @@
+:root {
+  --ink: #191919;
+  --body: #373530;
+  --muted: #787774;
+  --line: #eaeaea;
+  --avatar-bg: #2f2f2f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--body);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI",
+    "Pretendard", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 96px 24px 120px;
+}
+
+.avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 6px;
+  background: var(--avatar-bg);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 650;
+  color: var(--ink);
+  margin: 0 0 18px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 650;
+  color: var(--ink);
+  margin: 40px 0 14px;
+  word-break: keep-all;
+}
+
+h3 {
+  font-size: 16.5px;
+  font-weight: 650;
+  color: var(--ink);
+  margin: 26px 0 6px;
+  word-break: keep-all;
+}
+
+p { margin: 0 0 12px; }
+
+.subrole {
+  margin: 18px 0 6px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.subrole b { color: var(--ink); font-weight: 650; }
+
+ul {
+  margin: 0 0 12px;
+  padding-left: 24px;
+}
+ul ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+li {
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+li::marker { color: var(--muted); }
+
+.meta-list {
+  margin-bottom: 6px;
+}
+
+.oneliner {
+  color: var(--ink);
+  margin: 2px 0 10px;
+}
+
+b { color: var(--ink); font-weight: 700; }
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: var(--muted); }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 32px 0;
+}
+
+@media (max-width: 560px) {
+  .page { padding: 56px 20px 80px; }
+  h1 { font-size: 27px; }
+  h2 { font-size: 19px; }
+}
